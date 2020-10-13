@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		9F2F40692535B779005F524C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F40652535B779005F524C /* Movie.swift */; };
 		9F2F406A2535B779005F524C /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F40662535B779005F524C /* MovieRow.swift */; };
 		9F2F406B2535B779005F524C /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F40672535B779005F524C /* MovieDetails.swift */; };
+		9F2F407C2535B939005F524C /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9F2F407B2535B939005F524C /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2F407C2535B939005F524C /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,9 @@
 			dependencies = (
 			);
 			name = "movielist-mvvm-swiftui";
+			packageProductDependencies = (
+				9F2F407B2535B939005F524C /* URLImage */,
+			);
 			productName = "movielist-mvvm-swiftui";
 			productReference = 9F2F40492535B727005F524C /* movielist-mvvm-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 9F2F40402535B727005F524C;
+			packageReferences = (
+				9F2F407A2535B939005F524C /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 9F2F404A2535B727005F524C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F2F407A2535B939005F524C /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F2F407B2535B939005F524C /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F2F407A2535B939005F524C /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F2F40412535B727005F524C /* Project object */;
 }
